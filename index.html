@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spartan - Documentos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png" alt="Logo Spartan" class="logo">
+        <h1>Centro de Documentos</h1>
+    </header>
+
+    <main class="container">
+        <!-- Vista 1: Lista de archivos -->
+        <section id="list-view" class="view">
+            <h2>Selecciona un PDF</h2>
+            <div id="pdf-list" class="pdf-grid"></div>
+        </section>
+
+        <!-- Vista 2: Visor del PDF -->
+        <section id="viewer-view" class="view hidden">
+            <div class="viewer-actions">
+                <button id="btn-back" class="btn btn-secondary">← Volver a la lista</button>
+                <a id="btn-download" class="btn btn-primary" download>Descargar PDF</a>
+            </div>
+            <div class="iframe-container">
+                <iframe id="pdf-frame" src="" frameborder="0"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
